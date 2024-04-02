@@ -28,6 +28,7 @@ public class Main {
 
     public static void main(String[] args) {
         int size = 5;
+        int a = 9;
         personX = 0;
         personY = 4;
         int personLive = 3;
