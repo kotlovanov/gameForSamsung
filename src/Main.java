@@ -118,7 +118,7 @@ public class Main {
 
             }
         }
-        if (personLive != 0) System.out.println("Вы прошли игру!");
+        if (personLive >= 0) System.out.println("Вы прошли игру!");
         else System.out.println("Вы проиграли");
 
     }
