@@ -34,7 +34,7 @@ public class Main {
         String randomElement = givenList.get(random.nextInt(givenList.size()));
         System.out.println(randomElement);
         scanner = new Scanner(System.in);
-        String ans = scanner.nextLine();
+        String ans = scanner.nextLine().toLowerCase();
         ans = dictionary.get(ans);
         if (randomElement.equals(ans)) return true;
         else return false;
