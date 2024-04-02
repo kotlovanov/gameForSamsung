@@ -22,7 +22,6 @@ public class Main {
     }
 
     public static boolean giveTask() {
-
         int a = random.nextInt(100);
         int b = random.nextInt(100);
         System.out.println("Решите пример" + a + " + " + b + " = ");
@@ -34,10 +33,10 @@ public class Main {
     public static boolean giveBigTask() {
         String randomElement = givenList.get(random.nextInt(givenList.size()));
         System.out.println(randomElement);
-//        String answer = scanner.nextLine();
+        scanner = new Scanner(System.in);
         String ans = scanner.nextLine();
         ans = dictionary.get(ans);
-        if (ans.equals(randomElement)) return true;
+        if (randomElement.equals(ans)) return true;
         else return false;
     }
 
@@ -47,14 +46,14 @@ public class Main {
         personY = 4;
         int personLive = 3;
         dictionary = new HashMap<>();
-        dictionary.put("И", "В_негрет");
-        dictionary.put("ЛЛ", "Тро_ейбус");
-        dictionary.put("В", "Здра_ствуйте");
-        dictionary.put("Ю", " Параш_т");
-        dictionary.put("К", "Рю_зак");
-        dictionary.put("С", " Ай_берг");
-        dictionary.put("Н", "Ветре_ый");
-        dictionary.put("НН", "Стекля_ый");
+        dictionary.put("и", "В_негрет");
+        dictionary.put("лл", "Тро_ейбус");
+        dictionary.put("в", "Здра_ствуйте");
+        dictionary.put("ю", " Параш_т");
+        dictionary.put("к", "Рю_зак");
+        dictionary.put("с", " Ай_берг");
+        dictionary.put("н", "Ветре_ый");
+        dictionary.put("нн", "Стекля_ый");
         int count_monster = size * size - size - 1;
         int count_bigmonster = 4;
         random = new Random();
