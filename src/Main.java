@@ -23,8 +23,8 @@ public class Main {
 
     public static boolean giveTask() {
 
-        int a = random.nextInt(10);
-        int b = random.nextInt(10);
+        int a = random.nextInt(100);
+        int b = random.nextInt(100);
         System.out.println("Решите пример" + a + " + " + b + " = ");
         int answer = scanner.nextInt();
         if (answer == (a + b)) return true;
