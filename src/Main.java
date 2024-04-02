@@ -24,7 +24,7 @@ public class Main {
     public static boolean giveTask() {
         int a = random.nextInt(100);
         int b = random.nextInt(100);
-        System.out.println("Решите пример" + a + " + " + b + " = ");
+        System.out.println("Решите пример " + a + " + " + b + " = ");
         int answer = scanner.nextInt();
         if (answer == (a + b)) return true;
         else return false;
@@ -104,7 +104,6 @@ public class Main {
             if (!(abs(personX - x) <= 1 && abs(personY - y) <= 1 && abs(personX - x) != abs(personY - y))) continue;
 
 
-//            (board[(personY - 1) * size + personX - 1].equals("  "))
             movePerson(x, y);
             if (board[y][x].equals(monster)) {
                 if (!giveTask()) {
